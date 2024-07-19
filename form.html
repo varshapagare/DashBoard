@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: url(tpvop.jpeg);
+        background-size: cover;
+        
+    }
+    .container{
+        width: 100%;
+        max-width:750px;
+        background: rgba(0, 0, 0, 0.937);
+        padding: 28px;
+        margin: 0 28px;
+        border-radius: 10px;
+        box-shadow: inset -2px 2px 2px white;
+    }
+    .title{
+        font-size: 26px;
+        font-weight: 600;
+        text-align: center;
+        padding: 6px;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        border-bottom: solid 1px white;
+    }
+    .main-info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .input-box:nth-child(2n){
+        justify-content: end;
+
+    }
+    .input-box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        padding-bottom: 15px;
+    }
+    .input-box label{
+        width: 95%;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+    .input-box input{
+        height: 40px;
+        width: 95%;
+        border-radius: 7px;
+        outline: none;
+        border: 1px solid rgba(128, 128, 128, 0.199);
+        padding: 0 10px;
+    }
+    .gender-box{
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 1px solid white;
+    }
+    .gen-categary{
+        margin: 15px 0;
+        color: white;
+    }
+    .gen-categary label{
+        padding: 0 20px 0 5px ;
+    }
+    .gen-categary label,
+    .gen-categary input,
+    .frm-submit-btn input{
+        cursor: pointer;
+    }
+    .frm-submit-btn{
+        margin-top: 40px;
+    }
+    .frm-submit-btn input{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        color: rgba(209 ,209, 209);
+        background: rgba(63, 114, 76, 0.7);
+    
+
+    }
+    .frm-submit-btn input:hover{
+        background: rgba(29, 231, 80, 0.7);
+        color: #ffffff;
+    }
+    .gen{
+        font-size: 24px;
+        color:rgb(27, 124, 165) ;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h1 class="title">Registration</h1>
+        <form action="#">
+            <div class="main-info">
+                <div class="input-box">
+                    <label for="fullname">Student name</label>
+                    <input type="text" id="fullname"
+                    name="fullname" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                    <label for=username">Father's name</label>
+                    <input type="text" id="fullname"
+                    name="fullname" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                    <label for="email">Email address</label>
+                    <input type="text" id="fullname"
+                    name="fullname" placeholder="Enter your email">
+                </div>
+                <div class="input-box">
+                    <label for="fullname">Contact no.</label>
+                    <input type="text" id="fullname"
+                    name="fullname" placeholder="Enter your contact no.">
+                </div>
+                <div class="input-box">
+                    <label for="fullname">passward.</label>
+                    <input type="text" id="fullname"
+                    name="fullname" placeholder="Enter your passward">
+                </div>
+                <div class="input-box">
+                    <label for="fullname">Confirm passward</label>
+                    <input type="text" id="fullname"
+                    name="fullname" placeholder="Enter your confirm passward.">
+                </div>
+            </div>
+            <div class="gender-box">
+                <span class="gen">Gender</span>
+                <div class="gen-categary">
+                    <input type="radio" name="gender" id="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="">Female</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="">Other</label>
+                </div>
+            </div>
+            <div class="frm-submit-btn">
+                <input type="submit" value="Registration">
+            </div>
+
+        </form>
+    </div>
+    <script src="fetch.js"></script>
+</body>
+</html>

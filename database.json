@@ -1,0 +1,21 @@
+{
+  "product": [
+    {
+      "Id": "231",
+      "name": "Ram",
+      "Email": "varshap06@gamil.com",
+      "contact no.": "9977653245",
+      "passward": "varshp",
+      "confirm pws": "varshp",
+    
+    },
+    {
+      "id": "12",
+      "name": "ram",
+      "Email": "varshdf05@gmail.com",
+      "contect": "45789632",
+      "password": "dsref",
+      "confirm": "dsref"
+    }
+  ]
+}

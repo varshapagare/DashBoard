@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:  sans-serif;
+            overflow: hidden;
+        }
+        .table{
+            width: 100%;
+        }
+        .table_header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: rgba(128, 128, 128, 0.339);
+
+        }
+        .table_header p{
+            color: rgba(0, 0, 0, 0.807);
+        }
+        button{
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        td button:nth-child(1){
+            background-color: blue;
+        }
+        td button:nth-child(2){
+            background-color: red;
+        }
+        .btn{
+            padding: 10px 20px;
+            color: white;
+            background-color: blue;
+        }
+        input{
+            padding: 8px 25px;
+            margin: 0 10px;
+            outline: none;
+            border: 1px solid rgba(0, 0, 255, 0.708);
+        }
+        .table_section{
+            height: 650px;
+            overflow: auto;
+        }
+        table{
+            width: 100%;
+            table-layout: fixed;
+            min-width: 100px;
+            border-collapse: collapse;
+             
+        }
+        thead th{
+        position: sticky;
+        top: 0;
+        background-color: #f6f9fc;
+        color: rgb(112, 112, 139);
+        padding: 8px;
+        font-size: 15px;
+        
+        }
+         tbody td{
+            border-bottom: 1px solid rgba(245, 245, 245, 0.906);
+            word-break: break-all;
+            padding: 5px 1px;
+            text-align: center;
+        }
+        ::placeholder{
+            color: rgba(0, 0, 255, 0.636);
+        }
+        td img{
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 5px solid rgba(128, 128, 128, 0.398);
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="table_header">
+            <p>Product Details</p>
+            <div>
+                <input  placeholder="Products">
+                <button class="btn">Add New</button>
+            </div>
+        </div>
+        <div class="table_section">
+            <table>
+                <thead>
+                    <th>S.no</th>
+                    <th>Product</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Owner</th>
+                    <th>contact</th>
+                    <th> actipon</th>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                    <td><img src="/img dashbord/imgl/camera.webp" alt=""></td>
+                    <td>camera</td>
+                    <td>guptarakhi07@gmail.com</td>
+                    <td> Rakhi gupta</td>
+                    <td>91457863245</td>
+                    <td>
+                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    <td><img src="/img dashbord/imgl/watch.jpeg" alt=""></td>
+                    <td>watch</td>
+                    <td>Ravishank07@gmail.com</td>
+                    <td> Ravishankar</td>
+                    <td>91997863245</td>
+                    <td>
+                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td><img src="/img dashbord/imgl/shoe.webp" alt=""></td>
+                    <td>shoe</td>
+                    <td>guptraveena07@gmail.com</td>
+                    <td> Raveena gupt</td>
+                    <td>91457863245</td>
+                    <td>
+                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    </tr>
+                    <tr>
+                     <td>4</td>
+                    <td><img src="/img dashbord/imgl/leptop.webp" alt=""></td>
+                    <td>leptop</td>
+                    <td>mohitgour05@gmail.com</td>
+                    <td> Mohit gour</td>
+                    <td>91457863245</td>
+                    <td>
+                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    </tr>
+                    <tr>
+                   <td>5</td>
+                   <td><img src="/img dashbord/imgl/gitar.webp" alt=""></td>
+                   <td>gitar</td>
+                   <td>guptai07@gmail.com</td>
+                   <td> Rambilash gupta</td>
+                   <td>91457863245</td>
+                   <td>
+                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                <button><i class="fa-solid fa-trash-can"></i></button>
+                </td>
+                </tr>
+                <tr>
+                <td>6</td>
+                  <td><img src="/img dashbord/imgl/mobile.webp" alt=""></td>
+                 <td>Mobile</td>
+                 <td>palet17@gmail.com</td>
+                     <td> prakash patel</td>
+                     <td>91457863245</td>
+                     <td>
+                     <button><i class="fa-solid fa-pen-to-square"></i></button>
+                     <button><i class="fa-solid fa-trash-can"></i></button>
+                     </td>
+                     </tr>
+                     <tr>
+                     <td>7</td>
+                     <td><img src="/img dashbord/imgl/shoe.webp" alt=""></td>
+                     <td>shoe</td>
+                  <td>RamRai@gmail.com</td>
+                                <td> Ram Rai</td>
+                                <td>91454578245</td>
+                                <td>
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash-can"></i></button>
+                                </td>
+                                </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

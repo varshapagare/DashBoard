@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+    --bg:rgba(255, 0, 0, 0.44);
+    --bg-body:#69748297;  
+}
+
+#forms{
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100%;
+    /* color: var(--main); */
+    color: white;
+
+    
+}
+#form1{
+    
+    border: 2px solid rgba(0, 0, 0, 0.414);
+    height: 480px;
+    width: 400px;
+    /* color: white; */
+    /* background-color:var(); */
+    
+}
+#form1 input
+{
+    border-radius: 10px;
+    color: white;
+    background-color: var(--bg);
+    height: 10px;
+    width: 300px;
+    margin-left: 35px;
+    margin-top: 20px;
+    padding: 17px;
+    font-size: 15px;}
+    </style>
+</head>
+<body>
+    <div id="forms">
+        <div id="form1">
+            <form action="" onsubmit="return validate();">
+                <!-- <input type="text" placeholder="Enter your name" id="name"><br><br> -->
+                <input type="number" placeholder="Enter your ID" id="id"><br>
+                <input type="text" placeholder="Enter your name" id="nam"><br>
+                <input type="text" placeholder="Enter your number" id="number"><br>
+                <input type="text" placeholder="enter your Email" id="email"><br>
+                <input type="text" placeholder="Enter your Password" id="pass"><br>
+                <input type="text" placeholder="Enter confirm password" id="cpass"><br>
+                <input type="Submit" id="sub" onclick="add();" >
+       
+    </form>
+</div>
+          </div>
+</body>
+</html>
